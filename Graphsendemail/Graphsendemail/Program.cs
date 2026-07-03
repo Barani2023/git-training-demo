@@ -16,7 +16,7 @@ class Program
         string certPassword = "Graph@123";//cert password
         var certificate = new X509Certificate2(certPath, certPassword);
 
-       //Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
+       Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
 
 
         var clientSecretCredential = new ClientCertificateCredential(
