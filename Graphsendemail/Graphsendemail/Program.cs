@@ -5,6 +5,7 @@ using Microsoft.Graph.Users.Item.SendMail;
 using System.Security.Cryptography.X509Certificates;
 
 
+
 class Program
 {
     static async Task Main(string[] args)
@@ -13,7 +14,7 @@ class Program
         string clientId = "43ba21e8-86f3-4054-8441-76b00beb9105";
         string certPath = "C:\\certs\\GraphMailSenderApp.pfx";   // update your file path
         string certPassword = "Graph@123";//cert password
-
+        // certicate password
         var certificate = new X509Certificate2(certPath, certPassword);
 
        // Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
