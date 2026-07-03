@@ -17,7 +17,7 @@ class Program
         // certicate password and path are optional if you have a certificate without password or if you are using a certificate from the certificate store.
         var certificate = new X509Certificate2(certPath, certPassword);
 
-       // Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
+       Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
 
 
         var clientSecretCredential = new ClientCertificateCredential(
