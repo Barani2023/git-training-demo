@@ -10,15 +10,18 @@ class Program
 {
     static async Task Main(string[] args)
     {
+        // Set your Azure AD tenant ID, client ID, certificate path, and password
         string tenantId = "5d7022ea-fba6-4cbb-9c99-b9081b8abde4";
+        //string client
         string clientId = "43ba21e8-86f3-4054-8441-76b00beb9105";
+        // string certPath = "C:\\certs\\GraphMailSenderApp.pfx";   // update your file path
         string certPath = "C:\\certs\\GraphMailSenderApp.pfx";   // update your file path
         string certPassword = "Graph@123";//cert password
         var certificate = new X509Certificate2(certPath, certPassword);
 
        Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
 
-
+       
         var clientSecretCredential = new ClientCertificateCredential(
             tenantId,
             clientId,
