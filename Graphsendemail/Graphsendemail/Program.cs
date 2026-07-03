@@ -14,10 +14,9 @@ class Program
         string clientId = "43ba21e8-86f3-4054-8441-76b00beb9105";
         string certPath = "C:\\certs\\GraphMailSenderApp.pfx";   // update your file path
         string certPassword = "Graph@123";//cert password
-        // certicate password and path are optional if you have a certificate without password or if you are using a certificate from the certificate store.
         var certificate = new X509Certificate2(certPath, certPassword);
 
-       Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
+       //Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
 
 
         var clientSecretCredential = new ClientCertificateCredential(
