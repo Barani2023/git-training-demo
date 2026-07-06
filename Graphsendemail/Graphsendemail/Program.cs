@@ -23,7 +23,7 @@ class Program
 
        Console.WriteLine("Certificate Thumbprint: " + certificate.Thumbprint);
 
-
+       
         var clientSecretCredential = new ClientCertificateCredential(
             tenantId,
             clientId,
